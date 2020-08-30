@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="https://www.iiit.ac.in/" target="_blank">
+            <img src="images/iiit-new.png" alt="iiith-logo">
+        </a>
+        <div class="rdip">
+            <a href="https://serc.iiit.ac.in/rdip/" target="_blank">RDIP</a>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="homepage.html">Home</a>
+        <a href="registration.html">Registration Form</a>
+    </div>
+    <div class="container">
+        <form action="details.php" method="GET">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-Mail:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone:</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="phone" name="phone" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="gender">Gender:</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="reason">Reason for RDIP:</label>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" id="html" name="reason[]" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="reason[]" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="reason[]" value="JavaScript">
+                    <label for="js">JavaScript</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="college">College</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="college" name="college" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <input type="checkbox" id="declaration" name="declaration" required="required">
+                </div>
+                <div class="col-75">
+                    <label for="declaration">I declare above details given by me are true.</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="col-75">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
